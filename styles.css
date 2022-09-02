@@ -23,6 +23,10 @@ button {
   border: none;
   cursor: pointer;
 }
+video {
+  max-width: 100%;
+  display: block;
+}
 a:hover {
   color: #775248;
 }
@@ -164,6 +168,7 @@ figure a,
 .benefits {
   position: relative;
   top: -50px;
+  margin: 0 auto;
   padding: 50px 0;
   width: 90%;
   background-color: #ffffff;
@@ -224,7 +229,8 @@ figure li:last-child {
   object-fit: contain;
   display: block;
 }
-figure .picture {
+figure .picture,
+video {
   filter: brightness(60%);
 }
 figure li {
@@ -258,9 +264,11 @@ figure .title-lg {
 .about-place > .lnk {
   margin-bottom: 2rem;
 }
-
+.top-places-container {
+  padding: 40px 0;
+}
 .top-places {
-  padding: 50px 0;
+  padding-top: 50px;
 }
 .top-visit > .text-sm:not(:last-child) {
   margin-bottom: 2.6rem;
@@ -280,7 +288,35 @@ figure .title-lg {
 .top-visit:last-child {
   margin-bottom: 0;
 }
-.top-visit picture img{
+
+.top-visit picture img {
   margin-bottom: 3rem;
 }
 
+footer {
+  display: flow-root;
+  padding: 50px 0;
+  background-color: #0e1d28;
+}
+footer picture {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+table {
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+}
+th {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.33;
+}
+td {
+  font-size: 16px;
+  line-height: 1.5;
+}
+td,
+th {
+  padding: 0.5rem;
+}
