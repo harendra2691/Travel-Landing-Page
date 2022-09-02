@@ -1,5 +1,286 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+body {
+  font-family: "Lato", sans-serif;
+}
+:root {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+input {
+  outline: none;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+a:hover {
+  color: #775248;
+}
+
+::placeholder {
+  color: #ffffff;
+  opacity: 0.9;
+}
+form > .search-btn,
+.text-sm > a {
+  text-transform: uppercase;
+}
+.fa-arrow-right {
+  margin-left: 1rem;
+}
+.header-hero {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.logo,
+figure a,
+.top-places li {
+  display: inline-block;
+}
+.odigo-logo {
+  display: block;
+}
+.container {
+  max-width: 1262px;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+.wrapper {
+  padding: 3% 3%;
+}
+.wrapper nav {
+  float: right;
+}
+.ham-items {
+  line-height: 32px;
+}
+.ham-items li {
+  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #ffffff;
+  margin-right: 1rem;
+}
+.ham-items li:last-child {
+  margin-right: 0;
+}
+/* .ham-items li{
+    display: block;
+    width: 100%;
+    border: 1px solid whitesmoke;
+} */
+
+/* .wrapper label{
+    display: inline-block; 
+    color: #ffffff;
+    background: #add8e6;
+    font-size: 1.2rem;
+    padding: 10px;
+} */
+/* ul, #hamburger{
+    display: none; 
+    
+} */
+/* .wrapper input:checked ~ ul { display: block; } */
+.hero {
+  background: url("images/hero.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 100%;
+  position: relative;
+  margin-bottom: -50px;
+  z-index: -1;
+}
+.hero > article {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  /* text-align: center; */
+}
+.title-lg {
+  font-size: 4rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+.text-sm {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #102746;
+}
+.hero .text-sm {
+  color: #ffffff;
+}
+.hero article > .text-sm {
+  margin-bottom: 40px;
+}
+.input-field {
+  border-bottom: 2px solid #bfc0c5;
+  max-width: 190px;
+  margin-bottom: 2.4rem;
+}
+.oval {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+.input {
+  width: 92%;
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.33;
+  color: #ffffff;
+  padding: 1rem;
+}
+.search-btn {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #1b7dff;
+  padding: 1rem;
+  border-radius: 20px;
+}
+.search-btn:hover {
+  background-color: #ffffff;
+  color: #1b7dff;
+}
+
+.benefits {
+  padding: 50px 0;
+  width: 90%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 20px 0 rgb(21 24 36 / 16%);
+}
+.title-sm {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #102746;
+}
+.heading-sm {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.33;
+  color: #000;
+}
+
+.lnk {
+  color: #006dfe;
+}
+
+.card {
+  padding: 4rem 0;
+}
+.card:last-child {
+  padding-bottom: 0;
+}
+.card > img {
+  object-fit: contain;
+}
+.card > img,
+.card > .text-sm:not(:nth-last-child(1)) {
+  margin-bottom: 2rem;
+}
+.card > .heading-sm {
+  margin-bottom: 2rem;
+}
+
+.get-inspire {
+  padding: 50px 0;
+}
+
+.header-inspire > h2 {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #006dfe;
+}
+figure {
+  padding-top: 30px;
+}
+
+figure li:last-child {
+  margin-bottom: 0;
+}
+
+.picture {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+figure .picture {
+  filter: brightness(60%);
+}
+figure li {
+  position: relative;
+  margin-bottom: 3rem;
+}
+figure .title-lg {
+  position: absolute;
+  left: 6%;
+  bottom: 10%;
+  margin-bottom: 0;
+}
+
+.next-trip {
+  padding: 50px 0;
+}
+.place {
+  margin-bottom: 5rem;
+}
+.place:last-child {
+  margin-bottom: 0;
+}
+.about-place > .title-sm {
+  margin-bottom: 3rem;
+}
+
+.about-place > .text-sm {
+  margin-bottom: 2rem;
+}
+
+.about-place > .lnk {
+  margin-bottom: 2rem;
+}
+
+.top-places {
+  padding: 50px 0;
+}
+.top-visit > .text-sm:not(:last-child) {
+  margin-bottom: 2.6rem;
+}
+.see-more-btn {
+  background-color: #006dfe;
+  color: #ffffff;
+  font-size: 1.6rem;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-bottom: 0;
+}
+.top-visit {
+  margin-bottom: 4.2rem;
+  position: relative;
+}
+.top-visit:last-child {
+  margin-bottom: 0;
+}
+.top-visit picture img{
+  margin-bottom: 3rem;
+}
+
