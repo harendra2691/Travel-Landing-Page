@@ -46,14 +46,14 @@
     <main>
       <section class="hero">
         <article>
-          <h1 class="title-lg">Discover Amazing places in Japan</h1>
+          <h1 class="title-lg">Discover Amazing places in<br />Japan</h1>
           <p class="text-sm">
             Jump off balcony, onto stranger's head. Chase ball of string hide
             when guests come over. Being gorgeous with belly side up i could pee
             on this if i had the energy but under the bed, for attack the child,
             open the door,
           </p>
-          <form>
+          <form onsubmit="return false;">
             <div class="input-field">
               <span class="oval"></span>
               <input
@@ -145,51 +145,60 @@
               View All<i class="fa fa-thin fa-arrow-right"></i>
             </p>
           </header>
-          <figure>
-            <ul>
-              <li>
-                <a href="javascript:void()">
+
+          <ul>
+            <li>
+              <a href="javascript:void()">
+                <figure>
                   <img
                     src="images/image.png"
                     alt="mount-fuji"
                     class="picture"
                   />
-                  <h1 class="title-lg">Mount Fuji</h1>
-                </a>
-              </li>
-              <li>
-                <a href="javascript:void()">
+                  <figcaption class="title-lg">Mount Fuji</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void()">
+                <figure>
                   <img src="images/image_2.png" alt="Kyoto" class="picture" />
-                  <h1 class="title-lg">Kyoto</h1>
-                </a>
-              </li>
-              <li>
-                <a href="javascript:void()">
+                  <figcaption class="title-lg">Kyoto</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void()">
+                <figure>
                   <img src="images/image_3.png" alt="tokyo" class="picture" />
-                  <h1 class="title-lg">Tokyo</h1>
-                </a>
-              </li>
-              <li>
-                <a href="javascript:void()">
+                  <figcaption class="title-lg">Tokyo</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void()">
+                <figure>
                   <img src="images/image_4.png" alt="Niigata" class="picture" />
-                  <h1 class="title-lg">Niigata</h1>
-                </a>
-              </li>
-              <li>
-                <a href="javascript:void()">
+                  <figcaption class="title-lg">Niigata</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void()">
+                <figure>
                   <img src="images/image_5.png" alt="Sapporo" class="picture" />
-                  <h1 class="title-lg">Sapporo</h1>
-                </a>
-              </li>
-            </ul>
-          </figure>
+                  <figcaption class="title-lg">Sapporo</figcaption>
+                </figure>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="next-trip">
         <div class="container">
           <div class="place">
             <div class="about-place">
-              <h2 class="title-sm">Prefecture in Focus: Tottori</h2>
+              <h2 class="title-sm">Prefecture in Focus:<br />Tottori</h2>
               <p class="text-sm">
                 Jump off balcony, onto stranger's head. Chase ball of string
                 hide when guests come over. Being gorgeous with belly side up i
@@ -202,15 +211,15 @@
                 ></a>
               </p>
             </div>
-            <picture>
+            <picture class="rgt-mgn">
               <img src="images/image_6.png" alt="Tottori" class="picture" />
             </picture>
           </div>
 
           <div class="place">
-            <div class="about-place">
+            <div class="about-place rgt-mgn">
               <h2 class="title-sm">
-                Featured Neighborhood: Kyoto's Arashiyama
+                Featured Neighborhood:<br />Kyoto's Arashiyama
               </h2>
               <p class="text-sm">
                 Jump off balcony, onto stranger's head. Chase ball of string
@@ -225,7 +234,11 @@
               </p>
             </div>
             <picture>
-              <img src="images/image_7.png" alt="Tottori" class="picture" />
+              <img
+                src="images/image_7.png"
+                alt="Kyoto's Arashiyama"
+                class="picture"
+              />
             </picture>
           </div>
         </div>
@@ -235,9 +248,23 @@
           <h2 class="title-sm">Today top places to visit</h2>
           <ul class="top-places-container">
             <li class="top-visit">
-              <picture>
+              <figure>
                 <img src="images/image_8.png" alt="Nagoya" class="picture" />
-              </picture>
+                <figcaption class="heading-sm">
+                  Nagoya
+                  <span class="lk-cmt"
+                    >50 &nbsp;<a
+                      href="javascript:void()"
+                      class="fa-solid fa-message"
+                    ></a></span
+                  ><span class="lk-cmt">
+                    221 &nbsp;<a
+                      href="javascript:void()"
+                      class="fa-solid fa-heart"
+                    ></a
+                  ></span>
+                </figcaption>
+              </figure>
 
               <p class="text-sm">
                 Jump off balcony, onto stranger's head. Chase ball of string
@@ -247,9 +274,23 @@
               <button class="see-more-btn text-sm">See More</button>
             </li>
             <li class="top-visit">
-              <picture>
-                <img src="images/image_9.png" alt="Niigata" class="picture"
-              /></picture>
+              <figure>
+                <img src="images/image_9.png" alt="Niigata" class="picture" />
+                <figcaption class="heading-sm">
+                  NIIgata
+                  <span class="lk-cmt"
+                    >50 &nbsp;<a
+                      href="javascript:void()"
+                      class="fa-solid fa-message"
+                    ></a></span
+                  ><span class="lk-cmt">
+                    221 &nbsp;<a
+                      href="javascript:void()"
+                      class="fa-solid fa-heart"
+                    ></a
+                  ></span>
+                </figcaption>
+              </figure>
 
               <p class="text-sm">
                 Jump off balcony, onto stranger's head. Chase ball of string
@@ -259,9 +300,23 @@
               <button class="see-more-btn text-sm">See More</button>
             </li>
             <li class="top-visit">
-              <picture>
+              <figure>
                 <img src="images/image_10.png" alt="osaka" class="picture" />
-              </picture>
+                <figcaption class="heading-sm">
+                  Osaka
+                  <span class="lk-cmt"
+                    >50 &nbsp;<a
+                      href="javascript:void()"
+                      class="fa-solid fa-message"
+                    ></a></span
+                  ><span class="lk-cmt">
+                    221 &nbsp;<a
+                      href="javascript:void()"
+                      class="fa-solid fa-heart"
+                    ></a
+                  ></span>
+                </figcaption>
+              </figure>
 
               <p class="text-sm">
                 Jump off balcony, onto stranger's head. Chase ball of string
@@ -271,9 +326,23 @@
               <button class="see-more-btn text-sm">See More</button>
             </li>
             <li class="top-visit">
-              <picture>
+              <figure>
                 <img src="images/image_11.png" alt="saitama" class="picture" />
-              </picture>
+                <figcaption class="heading-sm">
+                  Saitama
+                  <span class="lk-cmt"
+                    >50 &nbsp;<a
+                      href="javascript:void()"
+                      class="fa-solid fa-message"
+                    ></a></span
+                  ><span class="lk-cmt">
+                    221 &nbsp;<a
+                      href="javascript:void()"
+                      class="fa-solid fa-heart"
+                    ></a
+                  ></span>
+                </figcaption>
+              </figure>
               <p class="text-sm">
                 Jump off balcony, onto stranger's head. Chase ball of string
                 hide when guests come over. Being gorgeous with belly side up i
@@ -282,9 +351,23 @@
               <button class="see-more-btn text-sm">See More</button>
             </li>
             <li class="top-visit">
-              <picture>
+              <figure>
                 <img src="images/image_12.png" alt="ueno" class="picture" />
-              </picture>
+                <figcaption class="heading-sm">
+                  Ueno
+                  <span class="lk-cmt"
+                    >50 &nbsp;<a
+                      href="javascript:void()"
+                      class="fa-solid fa-message"
+                    ></a></span
+                  ><span class="lk-cmt">
+                    221 &nbsp;<a
+                      href="javascript:void()"
+                      class="fa-solid fa-heart"
+                    ></a
+                  ></span>
+                </figcaption>
+              </figure>
 
               <p class="text-sm">
                 Jump off balcony, onto stranger's head. Chase ball of string
@@ -294,9 +377,23 @@
               <button class="see-more-btn text-sm">See More</button>
             </li>
             <li class="top-visit">
-              <picture>
-                <img src="images/image_13.png" alt="shibuya" class="picture"
-              /></picture>
+              <figure>
+                <img src="images/image_13.png" alt="shibuya" class="picture" />
+                <figcaption class="heading-sm">
+                  shibuya
+                  <span class="lk-cmt"
+                    >50 &nbsp;<a
+                      href="javascript:void()"
+                      class="fa-solid fa-message"
+                    ></a></span
+                  ><span class="lk-cmt">
+                    221 &nbsp;<a
+                      href="javascript:void()"
+                      class="fa-solid fa-heart"
+                    ></a
+                  ></span>
+                </figcaption>
+              </figure>
 
               <p class="text-sm">
                 Jump off balcony, onto stranger's head. Chase ball of string
@@ -307,7 +404,12 @@
             </li>
           </ul>
         </div>
-        <video poster="images/image_14.png" controls></video>
+        <figure>
+          <button class="play-btn">
+            <a class="play-icon"></a>
+          </button>
+          <video poster="images/image_14.png"></video>
+        </figure>
       </section>
     </main>
     <footer>
@@ -319,33 +421,30 @@
           />
           <img src="images/odigo-logo.png" />
         </picture>
-        <table cellspacing="0" cellpadding="0">
-          <tr>
-            <th>Company</th>
-            <th>Location</th>
-            <th>Social Media</th>
-          </tr>
-          <tr>
-            <td>About</td>
-            <td>Tokyo</td>
-            <td>Facebook</td>
-          </tr>
-          <tr>
-            <td>Team</td>
-            <td>Kyoto</td>
-            <td>Twitter</td>
-          </tr>
-          <tr>
-            <td>Carrers</td>
-            <td>Osaka</td>
-            <td>Instagram</td>
-          </tr>
-          <tr>
-            <td>Privacy Policy</td>
-            <td>Hokkaido</td>
-            <td>Youtube</td>
-          </tr>
-        </table>
+
+        <div class="footer-links">
+          <ul>
+            <li>Company</li>
+            <li><a href="javascript:void()">About</a></li>
+            <li><a href="javascript:void()">Team</a></li>
+            <li><a href="javascript:void()">Careers</a></li>
+            <li><a href="javascript:void()">Privacy Policy</a></li>
+          </ul>
+          <ul>
+            <li>Locations</li>
+            <li><a href="javascript:void()">Tokyo</a></li>
+            <li><a href="javascript:void()">Kyoto</a></li>
+            <li><a href="javascript:void()">Osaka</a></li>
+            <li><a href="javascript:void()">Hokkaido</a></li>
+          </ul>
+          <ul>
+            <li>Social Media</li>
+            <li><a href="javascript:void()">Facebook</a></li>
+            <li><a href="javascript:void()">Twitter</a></li>
+            <li><a href="javascript:void()">Instagram</a></li>
+            <li><a href="javascript:void()">Youtube</a></li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
