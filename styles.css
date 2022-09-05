@@ -250,7 +250,7 @@ form > .search-btn,
   border: 1px solid #006dfe;
 }
 .get-inspire ul {
-  padding-top: 30px;
+  margin-top: 30px;
 }
 .get-inspire ul::after {
   clear: both;
