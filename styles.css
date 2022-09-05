@@ -398,7 +398,7 @@ footer ul:last-child {
     font-size: 1.6rem;
   }
   .input-field {
-    max-width: 297px;
+    max-width: 298px;
     float: left;
     margin-right: 6rem;
     margin-bottom: 0;
@@ -547,6 +547,13 @@ footer ul:last-child {
   .bg-img {
     height: 204px;
   }
+  .input-field{
+    float: none;
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+  
+
 }
 @media only screen and (min-width: 426px) and (max-width: 650px) {
   .top-places-container {
@@ -555,6 +562,7 @@ footer ul:last-child {
   .top-visit figure {
     text-align: left;
   }
+  
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
