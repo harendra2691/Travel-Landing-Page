@@ -244,6 +244,7 @@ form > .search-btn,
 .get-inspire .lnk {
   float: right;
 }
+
 .bordr-line {
   width: 20%;
   border: 1px solid #006dfe;
@@ -251,6 +252,12 @@ form > .search-btn,
 .get-inspire ul {
   padding-top: 30px;
 }
+.get-inspire ul::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
 
 figure li:last-child {
   margin-bottom: 0;
@@ -443,9 +450,7 @@ footer ul:last-child {
     width: 402px;
     height: 276px;
   }
-  .get-inspire ul {
-    display: flow-root;
-  }
+
   .get-inspire li:nth-child(-n + 2) {
     width: calc((100% - 10px) / 2);
     float: left;
