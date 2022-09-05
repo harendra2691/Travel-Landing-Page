@@ -552,8 +552,14 @@ footer ul:last-child {
     margin-right: 0;
     margin-bottom: 3rem;
   }
-  
-
+}
+@media only screen and (min-width: 768px) and (max-width: 926px) {
+ 
+  .input-field{
+    float: none;
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
 }
 @media only screen and (min-width: 426px) and (max-width: 650px) {
   .top-places-container {
