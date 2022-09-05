@@ -450,10 +450,13 @@ footer ul:last-child {
     width: 402px;
     height: 276px;
   }
-
+  .get-inspire li{
+    margin-bottom: 0;
+  }
   .get-inspire li:nth-child(-n + 2) {
     width: calc((100% - 10px) / 2);
     float: left;
+    margin-bottom: 3rem;
   }
   .get-inspire li:first-child {
     margin-right: 1rem;
