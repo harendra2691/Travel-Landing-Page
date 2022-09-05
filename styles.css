@@ -303,7 +303,7 @@ video {
   margin-bottom: 2rem;
 }
 .top-places-container {
-  padding: 40px 0;
+  margin: 40px 0;
 }
 .top-places {
   padding-top: 50px;
@@ -493,7 +493,7 @@ footer ul:last-child {
 
   .top-places-container {
     display: flow-root;
-    padding: 64px 0 144px 0;
+    margin: 64px 0 144px 0;
   }
   .top-visit {
     float: left;
