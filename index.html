@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/3235c268e4.js"
-      crossorigin="anonymous"
-    ></script>
     <link
       href="http://fonts.googleapis.com/css?family=Lato:400,700"
       rel="stylesheet"
@@ -20,7 +16,7 @@
     <header class="header-hero">
       <div class="container">
         <div class="wrapper">
-          <a href="javascript:void()" class="logo"
+          <a href="javascript:void(0)" class="logo"
             ><img
               src="images/odigo-logo.png"
               alt="odigo-logo"
@@ -34,10 +30,10 @@
                     <input type="checkbox" id="hamburger"/> -->
 
             <ul class="ham-items">
-              <li><a href="javascript:void()">Articles</a></li>
-              <li><a href="javascript:void()">Locations</a></li>
-              <li><a href="javascript:void()">Videos</a></li>
-              <li><a href="javascript:void()">Sign in</a></li>
+              <li><a href="javascript:void(0)">Articles</a></li>
+              <li><a href="javascript:void(0)">Locations</a></li>
+              <li><a href="javascript:void(0)">Videos</a></li>
+              <li><a href="javascript:void(0)">Sign in</a></li>
             </ul>
           </nav>
         </div>
@@ -93,7 +89,7 @@
                 hide when guests come over.
               </p>
               <p class="text-sm">
-                <a href="javascript:void()" class="lnk"
+                <a href="javascript:void(0)" class="lnk"
                   >Learn More<i class="fa fa-thin fa-arrow-right"></i
                 ></a>
               </p>
@@ -111,7 +107,7 @@
                 hide when guests come over.
               </p>
               <p class="text-sm">
-                <a href="javascript:void()" class="lnk"
+                <a href="javascript:void(0)" class="lnk"
                   >Learn More<i class="fa fa-thin fa-arrow-right"></i
                 ></a>
               </p>
@@ -129,7 +125,7 @@
                 hide when guests come over.
               </p>
               <p class="text-sm">
-                <a href="javascript:void()" class="lnk"
+                <a href="javascript:void(0)" class="lnk"
                   >Learn More<i class="fa fa-thin fa-arrow-right"></i
                 ></a>
               </p>
@@ -140,19 +136,16 @@
       <section class="get-inspire">
         <div class="container">
           <header class="header-inspire">
-            <h2 class="title-sm">Get inspired for your next trip</h2>
+            <h2 class="title-sm bordr-line">Get inspired for your next trip</h2>
+            <p class="text-sm">
+              <a href="javascript:void(0)" class="lnk">
+                View All<i class="fa fa-thin fa-arrow-right"></i
+              ></a>
+            </p>
           </header>
-
-          <p class="text-sm lnk">
-            <a href="javascript:void()">
-              View All<i class="fa fa-thin fa-arrow-right"></i
-            ></a>
-          </p>
-          <hr class="bordr-line" />
-
           <ul>
             <li>
-              <a href="javascript:void()">
+              <a href="javascript:void(0)">
                 <figure>
                   <img
                     src="images/image.png"
@@ -164,7 +157,7 @@
               </a>
             </li>
             <li>
-              <a href="javascript:void()">
+              <a href="javascript:void(0)">
                 <figure>
                   <img
                     src="images/image_2.png"
@@ -176,7 +169,7 @@
               </a>
             </li>
             <li>
-              <a href="javascript:void()">
+              <a href="javascript:void(0)">
                 <figure>
                   <img
                     src="images/image_3.png"
@@ -188,7 +181,7 @@
               </a>
             </li>
             <li>
-              <a href="javascript:void()">
+              <a href="javascript:void(0)">
                 <figure>
                   <img
                     src="images/image_4.png"
@@ -200,7 +193,7 @@
               </a>
             </li>
             <li>
-              <a href="javascript:void()">
+              <a href="javascript:void(0)">
                 <figure>
                   <img
                     src="images/image_5.png"
@@ -226,7 +219,7 @@
                 attack the child, open the door,
               </p>
               <p class="text-sm">
-                <a href="javascript:void()" class="lnk"
+                <a href="javascript:void(0)" class="lnk"
                   >VIEW PREFECTURE<i class="fa fa-thin fa-arrow-right"></i
                 ></a>
               </p>
@@ -248,7 +241,7 @@
                 attack the child, open the door,
               </p>
               <p class="text-sm">
-                <a href="javascript:void()" class="lnk"
+                <a href="javascript:void(0)" class="lnk"
                   >VIEW NEIGHBORHOOD<i class="fa fa-thin fa-arrow-right"></i
                 ></a>
               </p>
@@ -265,25 +258,26 @@
       </section>
       <section class="top-places">
         <div class="container">
-          <h2 class="title-sm">Today top places to visit</h2>
-          <hr class="bordr-line" />
+          <h2 class="title-sm bordr-line">Today top places to visit</h2>
           <ul class="top-places-container">
             <li class="top-visit">
               <figure>
                 <img src="images/image_8.png" alt="Nagoya" class="picture" />
                 <figcaption class="heading-sm">
                   Nagoya
-                  <span class="lk-cmt"
-                    >50 &nbsp;<a
-                      href="javascript:void()"
-                      class="fa-solid fa-message"
-                    ></a></span
-                  ><span class="lk-cmt">
-                    221 &nbsp;<a
-                      href="javascript:void()"
-                      class="fa-solid fa-heart"
-                    ></a
-                  ></span>
+                  <div class="lk-cmt">
+                    <span>
+                      221 &nbsp;<button>
+                        <img src="images/like.png" alt="like-btn" /></button
+                    ></span>
+                    <span
+                      >50 &nbsp;<button>
+                        <img
+                          src="images/comment.png"
+                          alt="comment-btn"
+                        /></button
+                    ></span>
+                  </div>
                 </figcaption>
               </figure>
 
@@ -299,17 +293,19 @@
                 <img src="images/image_9.png" alt="Niigata" class="picture" />
                 <figcaption class="heading-sm">
                   NIIgata
-                  <span class="lk-cmt"
-                    >50 &nbsp;<a
-                      href="javascript:void()"
-                      class="fa-solid fa-message"
-                    ></a></span
-                  ><span class="lk-cmt">
-                    221 &nbsp;<a
-                      href="javascript:void()"
-                      class="fa-solid fa-heart"
-                    ></a
-                  ></span>
+                  <div class="lk-cmt">
+                    <span>
+                      221 &nbsp;<button>
+                        <img src="images/like.png" alt="like-btn" /></button
+                    ></span>
+                    <span
+                      >50 &nbsp;<button>
+                        <img
+                          src="images/comment.png"
+                          alt="comment-btn"
+                        /></button
+                    ></span>
+                  </div>
                 </figcaption>
               </figure>
 
@@ -325,17 +321,19 @@
                 <img src="images/image_10.png" alt="osaka" class="picture" />
                 <figcaption class="heading-sm">
                   Osaka
-                  <span class="lk-cmt"
-                    >50 &nbsp;<a
-                      href="javascript:void()"
-                      class="fa-solid fa-message"
-                    ></a></span
-                  ><span class="lk-cmt">
-                    221 &nbsp;<a
-                      href="javascript:void()"
-                      class="fa-solid fa-heart"
-                    ></a
-                  ></span>
+                  <div class="lk-cmt">
+                    <span>
+                      221 &nbsp;<button>
+                        <img src="images/like.png" alt="like-btn" /></button
+                    ></span>
+                    <span
+                      >50 &nbsp;<button>
+                        <img
+                          src="images/comment.png"
+                          alt="comment-btn"
+                        /></button
+                    ></span>
+                  </div>
                 </figcaption>
               </figure>
 
@@ -351,17 +349,19 @@
                 <img src="images/image_11.png" alt="saitama" class="picture" />
                 <figcaption class="heading-sm">
                   Saitama
-                  <span class="lk-cmt"
-                    >50 &nbsp;<a
-                      href="javascript:void()"
-                      class="fa-solid fa-message"
-                    ></a></span
-                  ><span class="lk-cmt">
-                    221 &nbsp;<a
-                      href="javascript:void()"
-                      class="fa-solid fa-heart"
-                    ></a
-                  ></span>
+                  <div class="lk-cmt">
+                    <span>
+                      221 &nbsp;<button>
+                        <img src="images/like.png" alt="like-btn" /></button
+                    ></span>
+                    <span
+                      >50 &nbsp;<button>
+                        <img
+                          src="images/comment.png"
+                          alt="comment-btn"
+                        /></button
+                    ></span>
+                  </div>
                 </figcaption>
               </figure>
               <p class="text-sm">
@@ -376,17 +376,19 @@
                 <img src="images/image_12.png" alt="ueno" class="picture" />
                 <figcaption class="heading-sm">
                   Ueno
-                  <span class="lk-cmt"
-                    >50 &nbsp;<a
-                      href="javascript:void()"
-                      class="fa-solid fa-message"
-                    ></a></span
-                  ><span class="lk-cmt">
-                    221 &nbsp;<a
-                      href="javascript:void()"
-                      class="fa-solid fa-heart"
-                    ></a
-                  ></span>
+                  <div class="lk-cmt">
+                    <span>
+                      221 &nbsp;<button>
+                        <img src="images/like.png" alt="like-btn" /></button
+                    ></span>
+                    <span
+                      >50 &nbsp;<button>
+                        <img
+                          src="images/comment.png"
+                          alt="comment-btn"
+                        /></button
+                    ></span>
+                  </div>
                 </figcaption>
               </figure>
 
@@ -402,17 +404,19 @@
                 <img src="images/image_13.png" alt="shibuya" class="picture" />
                 <figcaption class="heading-sm">
                   shibuya
-                  <span class="lk-cmt"
-                    >50 &nbsp;<a
-                      href="javascript:void()"
-                      class="fa-solid fa-message"
-                    ></a></span
-                  ><span class="lk-cmt">
-                    221 &nbsp;<a
-                      href="javascript:void()"
-                      class="fa-solid fa-heart"
-                    ></a
-                  ></span>
+                  <div class="lk-cmt">
+                    <span>
+                      221 &nbsp;<button>
+                        <img src="images/like.png" alt="like-btn" /></button
+                    ></span>
+                    <span
+                      >50 &nbsp;<button>
+                        <img
+                          src="images/comment.png"
+                          alt="comment-btn"
+                        /></button
+                    ></span>
+                  </div>
                 </figcaption>
               </figure>
 
@@ -440,30 +444,31 @@
             media="(min-width:1024px)"
             srcset="images/odigo-logo@2x.png"
           />
+
           <img src="images/odigo-logo.png" />
         </picture>
 
         <div class="footer-links">
           <ul>
             <li>Company</li>
-            <li><a href="javascript:void()">About</a></li>
-            <li><a href="javascript:void()">Team</a></li>
-            <li><a href="javascript:void()">Careers</a></li>
-            <li><a href="javascript:void()">Privacy Policy</a></li>
+            <li><a href="javascript:void(0)">About</a></li>
+            <li><a href="javascript:void(0)">Team</a></li>
+            <li><a href="javascript:void(0)">Careers</a></li>
+            <li><a href="javascript:void(0)">Privacy Policy</a></li>
           </ul>
           <ul>
             <li>Locations</li>
-            <li><a href="javascript:void()">Tokyo</a></li>
-            <li><a href="javascript:void()">Kyoto</a></li>
-            <li><a href="javascript:void()">Osaka</a></li>
-            <li><a href="javascript:void()">Hokkaido</a></li>
+            <li><a href="javascript:void(0)">Tokyo</a></li>
+            <li><a href="javascript:void(0)">Kyoto</a></li>
+            <li><a href="javascript:void(0)">Osaka</a></li>
+            <li><a href="javascript:void(0)">Hokkaido</a></li>
           </ul>
           <ul>
             <li>Social Media</li>
-            <li><a href="javascript:void()">Facebook</a></li>
-            <li><a href="javascript:void()">Twitter</a></li>
-            <li><a href="javascript:void()">Instagram</a></li>
-            <li><a href="javascript:void()">Youtube</a></li>
+            <li><a href="javascript:void(0)">Facebook</a></li>
+            <li><a href="javascript:void(0)">Twitter</a></li>
+            <li><a href="javascript:void(0)">Instagram</a></li>
+            <li><a href="javascript:void(0)">Youtube</a></li>
           </ul>
         </div>
       </div>
