@@ -149,17 +149,16 @@ form > .search-btn,
 /* .wrapper input:checked ~ ul { display: block; } */
 .hero {
   background: url("images/hero.png") no-repeat center/cover;
-  min-height: 600px;
+  min-height: 650px;
   width: 100%;
   position: relative;
 }
-.hero > article {
+.hero article {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
-  /* text-align: center; */
+  width: 100%;
 }
 .title-lg {
   font-size: 4rem;
