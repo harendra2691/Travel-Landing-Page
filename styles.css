@@ -54,29 +54,7 @@ video {
 
 /* HOVER STYLE- 3 below blocks */
 
-/* .ham-items li {
-  display: inline-block;
-  position: relative;
-  color: #0087ca;
-}
 
-.ham-items li::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #0087ca;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.ham-items li:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-} */
 
 .play-btn:hover {
   background-color: #1b7dff;
@@ -505,7 +483,28 @@ footer ul:last-child {
   .wrapper label {
     display: none;
   }
-
+  .ham-items li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .ham-items li::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .ham-items li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
   .title-lg {
     font-size: 5rem;
   }
