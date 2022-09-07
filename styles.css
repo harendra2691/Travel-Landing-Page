@@ -150,12 +150,12 @@ form > .search-btn,
 .ham-items li {
   color: black;
   border: 1px solid whitesmoke;
+  padding: 30px 0;
 }
 .ham-items a {
   text-transform: uppercase;
   font-weight: 700;
-  display: block;
-  padding: 30px;
+  display: inline-block;
 }
 
 .wrapper input:checked ~ ul {
@@ -470,7 +470,7 @@ footer ul:last-child {
   line-height: 1.5;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 650px) {
   .hero {
     min-height: 962px;
   }
@@ -485,6 +485,10 @@ footer ul:last-child {
     font-size: 1.8rem;
     border: none;
     width: auto;
+    padding: 0;
+  }
+  .ham-items li:last-child {
+    margin-right: 0;
   }
   .ham-items a {
     text-transform: none;
@@ -675,7 +679,4 @@ footer ul:last-child {
   .top-visit figure {
     text-align: left;
   }
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 }
