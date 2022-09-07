@@ -48,13 +48,13 @@ video {
 }
 
 .play-btn:hover,
-.footer-links a:hover,
-.get-inspire .title-lg:hover {
+.footer-links a:hover {
   color: #1b7dff;
-  transition: 0.3s ease-in-out;
 }
 
-.ham-items li {
+/* HOVER STYLE- 3 below blocks */
+
+/* .ham-items li {
   display: inline-block;
   position: relative;
   color: #0087ca;
@@ -76,7 +76,7 @@ video {
 .ham-items li:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
-}
+} */
 
 .play-btn:hover {
   background-color: #1b7dff;
@@ -116,37 +116,53 @@ form > .search-btn,
 .wrapper nav {
   float: right;
 }
+
 .ham-items {
   line-height: 32px;
 }
-.ham-items li {
+/* .ham-items li {
   display: inline-block;
   font-size: 1.5rem;
   line-height: 1.33;
   color: #ffffff;
   margin-right: 1rem;
-}
-.ham-items li:last-child {
+} */
+/* .ham-items li:last-child {
   margin-right: 0;
-}
-/* .ham-items li{
-    display: block;
-    width: 100%;
-    border: 1px solid whitesmoke;
 } */
 
-/* .wrapper label{
-    display: inline-block; 
-    color: #ffffff;
-    background: #add8e6;
-    font-size: 1.2rem;
-    padding: 10px;
-} */
-/* ul, #hamburger{
-    display: none; 
-    
-} */
-/* .wrapper input:checked ~ ul { display: block; } */
+/* BELOW 3 BLOCKS FOR HAMBURGER SMALLER SCREEN */
+#hamburger {
+  display: none;
+}
+.wrapper label {
+  color: #ffffff;
+}
+
+.ham-items {
+  display: none;
+  background: #ffffff;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.ham-items li {
+  color: black;
+  border: 1px solid whitesmoke;
+}
+.ham-items a {
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+  padding: 30px;
+}
+
+.wrapper input:checked ~ ul {
+  display: block;
+  height: 550px;
+}
+
 .hero {
   background: url("images/hero.png") no-repeat center/cover;
   min-height: 650px;
@@ -209,11 +225,16 @@ form > .search-btn,
   padding: 1rem;
   border-radius: 20px;
 }
+.search-btn,
+.see-more-btn,
+.play-btn,
+.footer-links a {
+  transition: 0.3s ease-in-out;
+}
 .search-btn:hover,
 .see-more-btn:hover {
   background-color: #f5f5f5;
   color: #1b7dff;
-  transition: 0.4s ease-in-out;
 }
 
 .benefits {
@@ -239,15 +260,21 @@ form > .search-btn,
 
 .lnk {
   color: #006dfe;
+  border: 1px solid #eef2f3;
+  border-radius: 50px;
+  transition: box-shadow 0.3s ease-in-out;
+  padding: 1rem;
 }
 
 .lnk:hover {
-  box-shadow: 0 2px 20px 0 rgb(21 24 36 / 16%);
-  transition: box-shadow 0.5s ease-in-out;
+  color: #ffffff;
+  background-color: #006dfe;
+  box-shadow: 0 5px 20px 0 #006dfe;
 }
 
 .card {
   padding: 4rem 0;
+  transition: box-shadow 0.3s ease-in-out;
 }
 .card:last-child {
   padding-bottom: 0;
@@ -261,10 +288,6 @@ form > .search-btn,
 }
 .card > .heading-sm {
   margin-bottom: 2rem;
-}
-.card:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  transition: box-shadow 0.3s ease-in-out;
 }
 
 .get-inspire {
@@ -319,10 +342,12 @@ figure li:last-child {
 video {
   filter: brightness(60%);
 }
-.picture {
+.get-inspire figure,
+.top-places-container .picture {
   transition: 0.5s;
 }
-.picture:hover {
+.get-inspire figure:hover,
+.top-places-container .picture:hover {
   transform: scale(1.1);
 }
 .get-inspire li {
@@ -445,14 +470,38 @@ footer ul:last-child {
   line-height: 1.5;
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 800px) {
   .hero {
     min-height: 962px;
   }
+  .wrapper nav {
+    background: none;
+  }
   .ham-items li {
+    display: inline-block;
+    line-height: 1.33;
+    color: #ffffff;
     margin-right: 82px;
     font-size: 1.8rem;
+    border: none;
+    width: auto;
   }
+  .ham-items a {
+    text-transform: none;
+    font-weight: normal;
+    display: initial;
+    padding: 0;
+  }
+  .ham-items {
+    position: initial;
+    display: inline-block;
+    background: none;
+  }
+  #hamburger,
+  .wrapper label {
+    display: none;
+  }
+
   .title-lg {
     font-size: 5rem;
   }
@@ -508,12 +557,10 @@ footer ul:last-child {
   }
 
   .bg-img {
-    width: 610px;
     height: 342px;
   }
 
   .sm-img {
-    width: 402px;
     height: 276px;
   }
   .get-inspire li {

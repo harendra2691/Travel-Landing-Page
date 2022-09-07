@@ -28,10 +28,9 @@
               height="30px"
               class="odigo-logo"
           /></a>
-
           <nav>
-            <!-- <label for="hamburger">&#9776;</label>
-                    <input type="checkbox" id="hamburger"/> -->
+            <input id="hamburger" type="checkbox" />
+            <label for="hamburger"><img src="images/ham-icon.png" /> </label>
 
             <ul class="ham-items">
               <li><a href="javascript:void(0)">Articles</a></li>
@@ -437,7 +436,13 @@
           <!-- <button class="play-btn">
             <a class="play-icon"></a>
           </button> -->
-          <video src="japan.mp4" poster="images/image_14.png" loop autoplay muted></video>
+          <video
+            src="japan.mp4"
+            poster="images/image_14.png"
+            loop
+            autoplay
+            muted
+          ></video>
         </figure>
       </section>
     </main>
@@ -448,8 +453,10 @@
             media="(min-width:1024px)"
             srcset="images/odigo-logo@2x.png"
           />
-
-          <img src="images/odigo-logo.png" alt="odigo-logo" width="100%"/>
+          <source
+            srcset="images/odigo-logo@2x.png 2x, images/odigo-logo.png 1x"
+          />
+          <img src="images/odigo-logo.png" alt="odigo-logo" />
         </picture>
 
         <div class="footer-links">
