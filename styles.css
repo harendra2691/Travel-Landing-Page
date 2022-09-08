@@ -472,13 +472,11 @@ footer picture {
   display: flow-root;
 }
 footer ul {
-  width: calc((100% - 60px) / 3);
-  float: left;
   color: #ffffff;
-  margin-right: 3rem;
+  margin-bottom: 3rem;
 }
 footer ul:last-child {
-  margin-right: 0;
+  margin-bottom: 0;
 }
 .footer-links > ul li:first-child {
   margin-bottom: 1rem;
@@ -678,6 +676,16 @@ footer ul:last-child {
     border-top: 25px solid transparent;
     border-left: 30px solid #1c141e;
     border-bottom: 25px solid transparent;
+  }
+  footer ul {
+    width: calc((100% - 60px) / 3);
+    float: left;
+    color: #ffffff;
+    margin-right: 3rem;
+    margin-bottom: 0;
+  }
+  footer ul:last-child {
+    margin-right: 0;
   }
   footer {
     padding: 120px 0;
