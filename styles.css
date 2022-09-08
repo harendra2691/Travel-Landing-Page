@@ -131,7 +131,6 @@ form > .search-btn,
 
 .wrapper input:checked ~ ul {
   display: block;
-  height: 550px;
 }
 
 .hero {
