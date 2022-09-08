@@ -169,9 +169,12 @@ form > .search-btn,
 }
 .ham-items a {
   text-transform: uppercase;
-  font-weight: 700;
   display: inline-block;
   font-size: 2rem;
+  transition: 0.3s;
+}
+.ham-items li:hover {
+  font-weight: 700;
 }
 
 .wrapper input:checked ~ .ham-items {
