@@ -91,20 +91,9 @@ form > .search-btn,
   float: right;
 }
 
-/* .ham-items li {
-  display: inline-block;
-  font-size: 1.5rem;
-  line-height: 1.33;
-  color: #ffffff;
-  margin-right: 1rem;
-} */
-/* .ham-items li:last-child {
-  margin-right: 0;
-} */
 .menu-button,
 .menu-button::before,
 .menu-button::after {
-  display: block;
   background-color: #ffffff;
   position: absolute;
   height: 4px;
@@ -172,14 +161,8 @@ form > .search-btn,
   display: inline-block;
   font-size: 2rem;
   transition: 0.3s ease-in-out;
-}
-.ham-items a:hover {
-  box-shadow: 5px 0 20px 0 #006dfe;
-  border: none;
   font-weight: 700;
-  border-radius: 50px;
 }
-
 .wrapper input:checked ~ .ham-items {
   display: block;
   position: fixed;
