@@ -107,6 +107,8 @@ form > .search-btn,
 }
 .wrapper label {
   color: #ffffff;
+  z-index: 11;
+  position: relative;
 }
 
 .ham-items {
@@ -117,6 +119,10 @@ form > .search-btn,
   left: 0;
   width: 100%;
   line-height: 32px;
+
+  top: 0;
+  z-index: 10;
+  padding-top: 100px;
 }
 .ham-items li {
   color: #000000;
@@ -448,6 +454,12 @@ footer ul:last-child {
   .wrapper nav {
     background: none;
   }
+  .ham-items {
+    position: initial;
+    display: inline-block;
+    background: none;
+    padding-top: 0;
+  }
   .ham-items li {
     display: inline-block;
     line-height: 1.33;
@@ -468,11 +480,7 @@ footer ul:last-child {
     display: initial;
     padding: 0;
   }
-  .ham-items {
-    position: initial;
-    display: inline-block;
-    background: none;
-  }
+
   #hamburger,
   .wrapper label {
     display: none;
