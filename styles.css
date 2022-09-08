@@ -171,9 +171,11 @@ form > .search-btn,
   text-transform: uppercase;
   display: inline-block;
   font-size: 2rem;
-  transition: 0.3s;
+  transition: box-shadow 0.3s ease-in-out;
 }
-.ham-items li:hover {
+.ham-items a:hover {
+  box-shadow: 5px 0 20px 0 #006dfe;
+  border: none;
   font-weight: 700;
 }
 
@@ -269,7 +271,6 @@ form > .search-btn,
   margin: 0 auto;
   max-width: 86%;
   background-color: #ffffff;
-  box-shadow: 0 2px 20px 0 rgb(21 24 36 / 16%);
 }
 .title-sm {
   font-size: 3rem;
