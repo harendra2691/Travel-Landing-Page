@@ -52,10 +52,6 @@ video {
   color: #1b7dff;
 }
 
-/* HOVER STYLE- 3 below blocks */
-
-
-
 .play-btn:hover {
   background-color: #1b7dff;
 }
@@ -95,9 +91,6 @@ form > .search-btn,
   float: right;
 }
 
-.ham-items {
-  line-height: 32px;
-}
 /* .ham-items li {
   display: inline-block;
   font-size: 1.5rem;
@@ -109,7 +102,6 @@ form > .search-btn,
   margin-right: 0;
 } */
 
-/* BELOW 3 BLOCKS FOR HAMBURGER SMALLER SCREEN */
 #hamburger {
   display: none;
 }
@@ -124,6 +116,7 @@ form > .search-btn,
   position: absolute;
   left: 0;
   width: 100%;
+  line-height: 32px;
 }
 .ham-items li {
   color: black;
@@ -464,6 +457,7 @@ footer ul:last-child {
     border: none;
     width: auto;
     padding: 0;
+    position: relative;
   }
   .ham-items li:last-child {
     margin-right: 0;
@@ -483,11 +477,7 @@ footer ul:last-child {
   .wrapper label {
     display: none;
   }
-  .ham-items li {
-    display: inline-block;
-    position: relative;
-  }
-  
+
   .ham-items li::after {
     content: "";
     position: absolute;
@@ -500,7 +490,7 @@ footer ul:last-child {
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
-  
+
   .ham-items li:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
