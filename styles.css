@@ -168,12 +168,9 @@ form > .search-btn,
   position: fixed;
   height: 100%;
 }
-.wrapper input:checked ~ .menu-button-container {
-  position: fixed;
-  top: 25px;
-  right: 60px;
+.stop-scrolling {
+  overflow: hidden;
 }
-
 .hero {
   background: url("images/hero.png") no-repeat center/cover;
   min-height: 650px;
