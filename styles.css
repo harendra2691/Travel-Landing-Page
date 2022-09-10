@@ -19,6 +19,7 @@ ul {
 input {
   outline: none;
 }
+
 button {
   border: none;
   cursor: pointer;
@@ -381,12 +382,10 @@ video {
 .about-place > .title-sm {
   margin-bottom: 3rem;
 }
-.about-place > .text-sm {
+.about-place > .text-sm, .about-place > .lnk {
   margin-bottom: 2rem;
 }
-.about-place > .lnk {
-  margin-bottom: 2rem;
-}
+
 .top-places-container {
   margin: 40px 0;
 }

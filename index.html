@@ -8,16 +8,9 @@
       src="https://kit.fontawesome.com/3235c268e4.js"
       crossorigin="anonymous"
     ></script>
-
     <script>
-      var timesClicked = 0;
       function disableScroll() {
-        timesClicked++;
-        if (timesClicked % 2 == 0) {
-          document.body.classList.remove("stop-scrolling");
-        } else {
-          document.body.classList.add("stop-scrolling");
-        }
+        document.body.classList.toggle("stop-scrolling");
       }
     </script>
     <link
